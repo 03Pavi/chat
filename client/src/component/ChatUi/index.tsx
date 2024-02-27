@@ -132,6 +132,7 @@ const ChatUi = () => {
                   <button
                     onClick={() => {
                       socket.emit("join-room", roomid);
+                      setRoomId("")
                       setToggle(!toggle);
                     }}
                   >
